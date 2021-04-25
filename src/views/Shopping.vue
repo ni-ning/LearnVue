@@ -1,13 +1,11 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    
+  <div class="content">    
     <h1>入口组件: {{ title }}</h1>
     <ul>
       <li v-for="(item, index) in cartList" :key="item.id">
         <h3>书名: {{ item.name }}</h3>
         <p>价格: ¥{{ item.price }}</p>
-        <el-button type="primary" @click="handleClick(index)">加入购物车</el-button>
+        <button type="primary" @click="handleClick(index)">加入购物车</button>
       </li>
     </ul>
 
@@ -18,11 +16,12 @@
 </template>
 
 <script>
+import '@/css/common.css'
 import MyCart from '@/components/Cart'
 import SelectionCart from '@/components/Selection'
 
 export default {
-  name: 'app',
+  name: 'shopping',
   data(){
     return {
       cartList: [],
@@ -61,11 +60,9 @@ export default {
 </script>
 
 <style scoped>
-  #app{
-    width: 1200px;
-    margin: 0 auto;
-    background-color:#f1f1f1;
-    text-align: center;
-  }
+    .content{
+        color: black;
+        font-size: 20px;
+    }
   ul,li{ padding:0;margin:0;list-style:none}
 </style>

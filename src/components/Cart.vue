@@ -2,7 +2,7 @@
     <div id="cart">
         <h3>所有书籍: {{title}}</h3>
 
-        <table border="1" cellspacing="0">
+        <table>
             <tr>
                 <td>#</td>
                 <td>编号</td>
@@ -80,10 +80,11 @@
 
 <style scoped>
     #cart{
-        width: 400px;
+        width: 1200px;
         background-color: #aaaaaa;
         margin: 0 auto;
         text-align: center;
+        font-size: 22px;
     }
 
     #cart h3{
