@@ -2,6 +2,7 @@
     <div id="vue-router">
         <!-- router-link类似a标签 to类似href -->
         <router-link to="/"><div class="nav">首页</div></router-link> |
+        <router-link to="/shopping"><div class="nav">初版购物车</div></router-link> |
         <router-link :to="{name: 'about'}"><div class="nav">关于</div></router-link> |
         <router-link :to="{name: 'user', params:{id:1}}"><div class="nav">用户1号</div></router-link> |
         <router-link to="/user/2"><div class="nav">用户2号</div></router-link> |

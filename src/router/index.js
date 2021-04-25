@@ -39,6 +39,11 @@ const routes = [
         redirect: '/about'
     },
     {
+        path: '/shopping',
+        name: 'shopping',
+        component: () => import('@/views/Shopping')
+    },
+    {
         path: '*',
         component: ()=>import('@/views/404')
     }
