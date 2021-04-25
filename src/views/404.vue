@@ -1,18 +1,17 @@
 <template>
     <div>
-        <div class="content">This is about page.</div>
+        <div class="content">Not Found</div>
     </div>
 </template>
 
 <script>
-    import '@/css/common.css'
     export default {
         
     }
 </script>
 
-<style  scoped>
+<style scoped>
     .content{
-        color: black;
+        color: red;
     }
 </style>

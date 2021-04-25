@@ -1,32 +1,38 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="vue-router">
+        <!-- router-link类似a标签 to类似href -->
+        <router-link to="/"><div class="nav">首页</div></router-link> |
+        <router-link :to="{name: 'about'}"><div class="nav">关于</div></router-link> |
+        <router-link :to="{name: 'user', params:{id:1}}"><div class="nav">用户1号</div></router-link> |
+        <router-link to="/user/2"><div class="nav">用户2号</div></router-link> |
+        <router-link :to="{name: 'page', query:{name: 'linda', password: '123456'}}"><div class="nav">查询页面</div></router-link> |
+        <router-link to="/redirect"><div class="nav">重定向</div></router-link>|
+        <router-link to="/profile/linda"><div class="nav">个人介绍</div></router-link> |
+        <!-- 展示的出口 -->
+        <router-view></router-view>
+
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+    import '@/css/reset.css'
+    export default {
+        
+    }
+</script>
 
-#nav {
-  padding: 30px;
-}
+<style scoped>
+    #vue-router{
+        width: 1200px;
+        background-color: #f1f1f1;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    #vue-router .nav{
+        display: inline-block;
+        font-size: 20px;
+        color: green;
+        margin: 10px;
+    }
 </style>

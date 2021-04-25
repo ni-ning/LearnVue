@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件</title>
+</head>
+
+<body>
+    <div>
+        <input type="button" value="点我" id="btn" />
+    </div>
+</body>
+
+<script>
+    function sayHi(){
+        console.log('Hi');
+    }
+
+    function sayHello(){
+        console.log('Hello');
+    }
+
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', sayHi, false);
+    btn.addEventListener('click', sayHello, false);
+
+    btn.removeEventListener('click', sayHi, false);
+</script>
+</html>
+
+<!-- 
+    1. 脚本语言，如python、shell开头会加一些脚本类型标识，所以html也是<!DOCTYPE html>
+    2. meta，如ORM也会有
+    3. 变量先定义再使用，document.getElementById('id') 同样也适用
+    4. script 标签嵌入到html中
+    5. DOM2规范 element.addEventListener element.removeEventListener
+ -->

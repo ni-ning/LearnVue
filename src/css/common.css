@@ -1,0 +1,8 @@
+.content{
+    width: 1200px;
+    height: 800px;
+    font-size: 25px;
+    margin: 10px auto;
+    padding: 20px 0;
+    border: 1px solid gray;
+}
