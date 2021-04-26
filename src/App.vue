@@ -11,7 +11,6 @@
         <router-link to="/profile/linda"><div class="nav">个人介绍</div></router-link> |
         <!-- 展示的出口 -->
         <router-view></router-view>
-
     </div>
 </template>
 
@@ -32,8 +31,8 @@
 
     #vue-router .nav{
         display: inline-block;
-        font-size: 20px;
+        font-size: 15px;
         color: green;
-        margin: 10px;
+        margin: 5px;
     }
 </style>

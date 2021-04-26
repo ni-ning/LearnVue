@@ -28,3 +28,7 @@ router-view 最终会被渲染成一个div 所以可以配置class 设置样式
 Vuex 单例对象管理所有的状态  异步方法 -> 同步方法 -> state -> render -> 组件
 
 异步请求数据的场景会有延迟，所以需要异步方法
+
+编程式导航
+- this.$router  VueRouter实例 编程式导航  this.$router.push('/') Vue传参特别灵活，能传字符串的地方，可以考虑一下是否能传对象，对象的表达力更强
+- this.$route
